@@ -34,7 +34,7 @@ class CustomWorker @AssistedInject constructor(
                 Result.retry()
             } else {
                 Log.d("CustomWorker", "Error")
-                Result.failure(Data.Builder().putString("error", e.message).build())
+                Result.Retry()
             }
         }
 
